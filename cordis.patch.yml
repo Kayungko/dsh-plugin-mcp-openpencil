@@ -1,0 +1,11 @@
+# Mount OpenPencil as a DSH MCP server (Streamable HTTP).
+# Isolated plugin group; tools register as mcp__openpencil__*.
+- insert:
+    - id: mcp-openpencil
+      name: '@deepseek-ai/cordis-plugin-group'
+      group: true
+      isolate:
+        mcpOpenpencil: true
+      config:
+        - id: mcp-openpencil-runtime
+          name: 'dsh-plugin-mcp-openpencil'
