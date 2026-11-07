@@ -1,6 +1,6 @@
 {
   "name": "dsh-plugin-mcp-openpencil",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Mount OpenPencil (local design editor) as a Streamable-HTTP MCP server in DeepSeek Harness, so sessions can create/edit .op design files through mcp__openpencil__* tools.",
   "type": "module",
   "main": "index.mjs",
@@ -23,7 +23,7 @@
     "check": "node --check index.mjs && node --check config.mjs"
   },
   "peerDependencies": {
-    "@deepseek-ai/dsh-mcp-client": ">=0.1.0-rc.6 <0.2.0"
+    "@deepseek-ai/dsh-mcp-client": ">=0.1.0-rc.6 <0.2.0 || >=0.2.2-rc.1 <0.2.3"
   },
   "engines": {
     "node": "^22.19.0 || >=24"
